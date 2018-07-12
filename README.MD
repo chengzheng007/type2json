@@ -1,0 +1,1 @@
+this package provide simple function,to convert time or date type marshal to json, see how to use it in use_test.go
