@@ -2,12 +2,12 @@ this package provide simple function,to convert time or date type marshal to jso
 in golang, we know that, a common time.Time type, when marshal it to json, it has extra info we don't need:
 
 ```go
-type Temp struct {
+	type Temp struct {
 		MyTime time.Time `json:"my_time"`
 	}
-a := &A{MyTime:time.Now()}
-buf, _ := json.Marshal(a)
-fmt.Println(string(buf))
+	a := &A{MyTime:time.Now()}
+	buf, _ := json.Marshal(a)
+	fmt.Println(string(buf))
 ```
 
 output:
@@ -22,7 +22,7 @@ use example:
 
 ```go
 
-type A struct {
+	type A struct {
 		MyDate Date `json:"my_date"`
 		MyTime Time `json:"my_time"`
 		MyStmp Stmp `json:"my_stmp"`
