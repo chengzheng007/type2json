@@ -5,7 +5,7 @@ in golang, we know that, a common time.Time type, when marshal it to json, it ha
 	type Temp struct {
 		MyTime time.Time `json:"my_time"`
 	}
-	a := &A{MyTime:time.Now()}
+	a := &Temp{MyTime:time.Now()}
 	buf, _ := json.Marshal(a)
 	fmt.Println(string(buf))
 ```
