@@ -58,3 +58,8 @@ marshal byt({"my_date":"2018-07-12","my_time":"2018-07-13 19:58:47","my_stmp":"1
 unmarshal MyDate(2018-07-12 00:00:00) MyTime(2018-07-13 19:58:47) MyStmp(2018-07-12 19:58:47)
 ```
 
+Additional, if you define a struct like A, it also support sql Scan, you can Scan value from database timestamp type into MyTime！
+
+Enjoy it!
+
+
