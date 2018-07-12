@@ -8,7 +8,7 @@ import (
 )
 
 /*
-  this test case show you how to use packae
+  this test case show you how to use package
 */
 
 func TestStmp(t *testing.T) {
